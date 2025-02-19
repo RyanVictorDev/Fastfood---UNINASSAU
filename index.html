@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Algo</h1>
+        <div class="column">
+            <div class="row">
+                <div class="card">
+                    <div class="square"></div>
+                    <div class="description">
+                        <h2>Hamburguer</h2>
+                        <p>Uma pequena descricao sobre o produto</p>
+                    </div>
+                    <div class="actions">
+                        <div class="quantity-selector">
+                            <button onclick="decreaseQuantity()">-</button>
+                            <input id="quantity" type="number" value="1" min="1">
+                            <button onclick="increaseQuantity()">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Card 2</h2>
+                    <p>Texto do card 2</p>
+                </div>
+
+                <div class="card">
+                    <h2>Card 3</h2>
+                    <p>Texto do card 3</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,98 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #dddddd;
+}
+
+a{
+    text-decoration: none;
+    color: #f8f8f8;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    color: #ff8080;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 1rem 10rem;
+    background-color: #282828;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 60%;
+    margin-inline: auto;
+}
+
+.row{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin-inline: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    width: 20rem;
+    height: 30rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.description{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    align-items: left;
+    gap: 0.5rem;
+}
+
+.square{
+    display: flex;
+    width: 80%;
+    height: 60%;
+    background-color: red;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.actions {
+    display: flex;
+    margin-inline: auto;
+    gap: 10px;
+}
+
+.quantity-selector button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.quantity-selector input {
+    width: 80px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
