@@ -7,27 +7,78 @@ body{
 
 a{
     text-decoration: none;
-    color: #f8f8f8;
+    color: #000000;
     transition: all 0.3s ease;
 }
 
 a:hover{
-    color: #ff8080;
+    color: #ff2424;
 }
 
 .navbar{
     display: flex;
+    width: 100%;
     align-items: center;
-    padding: 1rem 10rem;
-    background-color: #282828;
+    padding: 1rem 5rem;
+    background-color: #28282800;
+    border-bottom: 2px solid rgb(192, 192, 192); 
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: auto;
 }
 
 .navbar ul{
     display: flex;
+    font-weight: bold;
     list-style: none;
-    justify-content: space-between;
+    gap: 5rem;
     width: 60%;
     margin-inline: auto;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0.3rem;
+}
+
+.search input{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #cccccc00;
+}
+
+.search button{
+    display: flex;
+    align-items: center;
+    height: 2.1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #cccccc00;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.cart{
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.category{
+    /* display: flex; */
+    align-items: center;
+    margin: 3rem;
+    gap: 1rem;
 }
 
 .row{
@@ -47,36 +98,46 @@ a:hover{
     padding: 1rem;
     gap: 1rem;
     width: 20rem;
-    height: 30rem;
+    height: 25rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkboxItem{
+    display: flex;
+    align-self: self-end;
 }
 
 .description{
     display: flex;
     align-self: flex-start;
     flex-direction: column;
+    flex-grow: 1;
     align-items: left;
     gap: 0.5rem;
 }
 
-.square{
+.imageProduct{
     display: flex;
-    width: 80%;
-    height: 60%;
-    background-color: red;
+    object-fit: cover;
+    image-rendering: auto;
+    width: 100%;
+    height: 50%;
+}
+
+.actions {
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+    margin-inline: auto;
+    justify-content: space-between;
+    /* gap: 50px; */
 }
 
 .quantity-selector {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-}
-
-.actions {
-    display: flex;
-    margin-inline: auto;
-    gap: 10px;
+    gap: 5px;
 }
 
 .quantity-selector button {
@@ -95,4 +156,12 @@ a:hover{
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px;
+}
+
+.price{
+    align-self: center;
+    margin-right: 0;
+    margin-left: auto;
+    font-weight: bold;
+    color: green;
 }
